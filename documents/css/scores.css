@@ -1,0 +1,45 @@
+:root {
+    --lightbrown: rgb(163, 137, 115);
+    --darkdefault: rgb(107, 74, 66);
+    --lightdefault: rgb(234, 235, 222);
+    --highlights: rgb(148, 110, 110);
+    --midtone: rgb(141, 118, 118);
+}
+
+body {
+    background-color: var(--lightbrown);
+}
+
+
+header {
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 4px solid var(--highlights);
+    margin: 20px;
+    color: var(--lightdefault);
+    background-color: var(--darkdefault);
+    border-radius: 30px;
+    font-size: 150%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li {
+    max-width: 75%;
+    border: 2px solid var(--darkdefault);
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 125%;
+    background-color: var(--midtone);
+    text-align: center;
+    color: var(--lightdefault);
+}

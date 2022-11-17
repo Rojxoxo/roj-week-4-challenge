@@ -58,9 +58,52 @@ body {
     color: var(--lightdefault);
 }
 
+.startScreen button {
+    background-color: var(--lightdefault);
+    border: 2px solid var(--highlights);
+    padding: 10px 15px;
+    margin: 20px;
+    border-radius: 10px;
+    color: var(--darkdefault);
+    font-size: 125%;
+    font-weight: bold;
+}
+
 
 .questions {
     display: flex;
-    background-color: var(--darkdefault);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.questions header {
+    background-color: var(--lightdefault);
+    border: 2px solid var(--darkdefault);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    color: var(--darkdefault);
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.questions ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.questions li {
+    max-width: 75%;
+    border: 2px solid var(--darkdefault);
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 125%;
+    background-color: var(--midtone);
+    text-align: center;
+    color: var(--lightdefault);
 }

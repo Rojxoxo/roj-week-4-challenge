@@ -107,3 +107,28 @@ body {
     text-align: center;
     color: var(--lightdefault);
 }
+
+.endScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--lightdefault);
+    border: 2px solid var(--darkdefault);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    color: var(--darkdefault);
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.endScreen input {
+    background-color: var(--lightdefault);
+    border: 2px solid var(--highlights);
+    padding: 10px 15px;
+    margin: 20px;
+    border-radius: 10px;
+    color: var(--darkdefault);
+    font-size: 125%;
+    font-weight: bold;
+}

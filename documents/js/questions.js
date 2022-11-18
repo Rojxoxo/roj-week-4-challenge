@@ -1,4 +1,5 @@
 var startQuizEl = document.querySelector("#startQuiz");
+var selectAnswer = document.querySelector(".ans-choice")
 const question = document.getElementById("question");
 const anschoices = document.getElementsByClassName("ans-choice");
 
@@ -49,16 +50,14 @@ startQuizEl.addEventListener("click", function() {
 });
 
 function newQuestion () {
-    questionCounter++ ;
-    currentQuestion = questions[questionCounter]
-    question.innerText = currentQuestion.question;
-
-    anschoices.forEach(choice => {
-        const number = chocie.dataset["number"];
-        choice.innerText = currentQuestion["choice" + number];
-    });
+        questionCounter++ ;
+        currentQuestion = questions[questionCounter];
+        question.innerText = currentQuestion.question;
+        selectAnswer.addEventListener("click", function() {
+            console.log("click")
+            newQuestion ()
+        })
 }
 
-for (let i = 0; i < questions.length; i++) {
 
-}
+

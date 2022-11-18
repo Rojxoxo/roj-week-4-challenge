@@ -13,33 +13,33 @@
         <p id="timer">Time Left: </p>
     </header>
     
-    <main class="startScreen">
+    <main class="startScreen hideStart" id="startVis">
         <header>JavaScript Fundamentals Quiz</header>
-        <p>this is a coding quiz and this is a bunch of placeholder text to see how it would look with multiple sentences. This will be replaced later with actually relevant text once I get to it :)</p>
-        <button type="button">Start Quiz!</button>
+        <p>This is a coding quiz about JavaScript Fundamentals. :)</p>
+        <button id="startQuiz">Start Quiz!</button>
     </main>
 
-    <section class="questions">
-        <header class="thequestion">
+    <section class="questions hideQuestion" id="questionVis">
+        <header class="thequestion" id="question">
             Question
         </header>
-        <ul>
-            <li>
-                choice
-            </li>
-            <li>
-                choice
-            </li>
-            <li>
-                choice
-            </li>
-            <li>
-                choice
-            </li>
-        </ul>
+        <div class="container">
+            <div class="ans-choice">
+                <p class="choice-text" data-number="1">1</p>
+            </div>
+            <div class="ans-choice">
+                <p class="choice-text" data-number="2">2</p>
+            </div>
+            <div class="ans-choice">
+                <p class="choice-text" data-number="3">3</p>
+            </div>
+            <div class="ans-choice">
+                <p class="choice-text" data-number="4">4</p>
+            </div>
+        </div>
     </section>
 
-    <article class="endScreen">
+    <article class="endScreen hideEnd" >
         <header>
             All Done!
         </header>

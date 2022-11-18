@@ -88,7 +88,7 @@ body {
     font-weight: bold;
 }
 
-.questions ul {
+.container {
     list-style: none;
     display: flex;
     align-items: center;
@@ -96,10 +96,10 @@ body {
     gap: 10px;
 }
 
-.questions li {
+.ans-choice {
     max-width: 75%;
     border: 2px solid var(--darkdefault);
-    padding: 15px;
+    padding: 0px 15px;
     margin: 5px;
     border-radius: 10px;
     font-size: 125%;
@@ -132,3 +132,11 @@ body {
     font-size: 125%;
     font-weight: bold;
 }
+
+.hideQuestion {
+    display: none;
+}
+.hideEnd {
+    display: none;
+}
+
